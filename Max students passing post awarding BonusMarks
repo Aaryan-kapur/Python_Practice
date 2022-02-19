@@ -1,0 +1,17 @@
+Maximum students to pass after giving bonus to everybody and not exceeding 100 marks
+https://www.geeksforgeeks.org/maximum-students-to-pass-after-giving-bonus-to-everybody-and-not-exceeding-100-marks/
+
+
+
+
+
+
+arr = [0, 21, 83, 45, 64]
+maxBonus = 100 - max(arr)
+count = 0
+for i in arr:
+  i = i + maxBonus
+  if i > 50:
+    count += 1
+
+print(arr," ",count)
